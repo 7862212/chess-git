@@ -1,0 +1,74 @@
+tr, td {
+	width: 50px;
+	height: 50px;
+}
+table {
+	border-collapse: collapse;
+	margin: 20px auto;
+}
+
+tr:nth-child(odd) td:nth-child(even) {
+	background: black;  // строки нечетные + ячейки четные
+}
+
+tr:nth-child(even) td:nth-child(odd) {
+	background: black; // строки четные + ячейки нечетные
+}
+
+tr:first-child td:nth-child(even),                     // первые + четные верх
+tr:first-child td:nth-child(odd),                      // первые + нечетные верх
+
+tr:nth-child(even) td:first-child,                    // четные + первые лево
+tr:nth-child(odd) td:first-child,                     // нечетные + первые лево
+
+tr:last-child td:nth-child(even),                     // последние + четные низ
+tr:last-child td:nth-child(odd),                      // последние + нечетные низ
+
+tr:nth-child(even) td:last-child,                     // четные + последние право
+tr:nth-child(odd) td:last-child                       // нечетные + последние право
+{
+	background: green;
+	width: 20px;
+	height: 20px;
+	
+}
+
+tr:first-child, tr:last-child // первые верх // последние низ
+	{
+	height: 20px;
+}
+
+.wrapper {}
+
+.container {
+	max-width: 960px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.shess {
+
+	// .shess__container
+	&__container {}
+
+	// .shess__chess-board
+	&__chess-board {
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
